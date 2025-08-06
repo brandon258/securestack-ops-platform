@@ -29,42 +29,24 @@ securestack-ops-platform/
 └── .github/workflows/      # CI/CD pipeline
 ```
 
-🧱 Features
-Self-service application onboarding via Backstage
+## 🧱 Features
 
-Automated firewall provisioning with Ansible
+- Self-service application onboarding via Backstage
+- Automated firewall provisioning with Ansible
+- Python CLI for connectivity tests (e.g., netcheck)
+- GitHub Actions CI pipeline for sample services
 
-Python CLI for connectivity tests (e.g., netcheck)
+## 🛠 Tech Stack
 
-GitHub Actions CI pipeline for sample services
+- Backstage (Developer Portal)
+- Ansible
+- Bash
+- Python
+- GitHub Actions
+- Docker (optional for services)
+- iptables / firewalld (simulated firewall rules)
 
-🛠 Tech Stack
-Backstage (Developer Portal)
+## 📚 Documentation
 
-Ansible
-
-Bash
-
-Python
-
-GitHub Actions
-
-Docker (optional for services)
-
-iptables / firewalld (simulated firewall rules)
-
-🧠 Interview Talking Points
-Why Backstage is valuable for platform teams
-
-How to enforce network policy via automation
-
-Diagnosing connectivity between services
-
-Building golden path templates for developers
-
-📚 Documentation
-docs/network-diagram.png
-
-docs/developer-workflows.md
-
-docs/interview-notes.md
+- [`docs/network-diagram.png`](docs/network-diagram.png)
+- [`docs/developer-workflows.md`](docs/developer-workflows.md)
