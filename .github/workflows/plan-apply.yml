@@ -1,0 +1,13 @@
+name: TF Plan
+on:
+  pull_request:
+    paths: ["terraform/**"]
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    permissions: { contents: read, pull-requests: write, id-token: write }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: hashicorp/setup-terraform@v3
+      - run: terraform -chdir=terraform/envs/sandbox init
+      - run: terraform -chdir=terraform/envs/sandbox plan -no-color
