@@ -1,6 +1,6 @@
 # securestack-ops-platform
 
-Internal Developer Platform using Backstage, Ansible, Bash, and Python to automate secure app and network provisioning.
+Internal Developer Platform using Ansible, Bash, and Python to automate secure app and network provisioning.
 
 ## 💡 Use Case
 
